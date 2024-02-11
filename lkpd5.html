@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //no 1
+            // for(let i = 1; i <=50; i++){
+            //     console.log(i)
+            // }
+
+                //no 2
+            // for(let i = 1; i <=50; i++){
+            //     if(i%2==0){
+               
+            // }else{
+            //     console.log(`${i}  bilangan ganjil`)
+            // }
+            // }
+
+            //no 3
+
+            // for(let i = 1; i <=50; i++){
+            //     if(i%2==0){
+            //     console.log(`${i}  bilangan genap`)
+            // }else{
+                
+            // }
+            // }
+
+                //no 4
+               // for(let i = 1; i <=50; i++){
+            //     if(i%2==0){
+            //     console.log(`${i}  bilangan genap`)
+            // }else{
+            //     console.log(`${i}  bilangan ganjil`)
+            // }
+            // }
+
+            //no 5
+          let Terbesar=-Infinity ;
+          let Terkecil=Infinity;
+          let total = 0;
+         
+          for(let a = 1; a <=20; a++){
+            let bilangan = parseFloat(prompt("masukan nilai",a))
+            if(isNaN(bilangan)){
+                alert("mohon print menggunakan angka")
+            } else{
+                total += bilangan 
+                
+                if(bilangan>Terbesar){
+                    Terbesar=bilangan
+                }
+
+                if(bilangan<Terkecil){
+                    Terkecil= bilangan
+                }
+            }
+          }
+
+          let rata= total/20;
+
+          
+          console.log(`nilai Terbesar ${Terbesar}`)
+          console.log(`nilai Terkecil ${Terkecil}`)
+          console.log(`nilai rata-rata ${rata}`)
+
+
+
+
+           
+    </script>
+</body>
+</html>
